@@ -1,0 +1,6 @@
+dev/replenish/enchant/ReplenishEnchantment.class
+dev/replenish/enchant/ReplenishListener.class
+dev/replenish/enchant/ReplenishPlugin.class
+dev/replenish/enchant/ReplenishCommand.class
+dev/replenish/enchant/ReplenishListener$1.class
+dev/replenish/enchant/AnvilListener.class
