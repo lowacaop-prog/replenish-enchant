@@ -20,10 +20,11 @@ public class ReplenishCommand implements CommandExecutor {
         EnchantmentStorageMeta meta = (EnchantmentStorageMeta) book.getItemMeta();
         meta.getPersistentDataContainer().set(new NamespacedKey(ReplenishPlugin.getInstance(), "replenish_level"), PersistentDataType.INTEGER, 1);
         List<String> lore = new ArrayList<>();
-        lore.add(ChatColor.GRAY + "Replenish I");
+        lore.add(ChatColor.GRAY + "Replanter");
         lore.add(ChatColor.DARK_GRAY + "Right-click any tool to apply.");
+        lore.add(ChatColor.GRAY + "Replant automatically broken crops");
         meta.setLore(lore);
-        meta.setDisplayName(ChatColor.YELLOW + "Replenish I");
+        meta.setDisplayName(ChatColor.YELLOW + "Replanter");
         book.setItemMeta(meta);
         player.getInventory().addItem(book);
         player.sendMessage(ChatColor.GREEN + "You received a " + ChatColor.YELLOW + "Replenish I" + ChatColor.GREEN + " enchanted book!");
